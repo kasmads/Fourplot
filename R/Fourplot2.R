@@ -14,8 +14,8 @@
 #' @export
 fourplot <- function(vec){
   n<-length(vec)
-  par(mfrow=c(2,2))
-  plot(1:n,vec[1:n],pch=20)
+  par(mfrow=c(2,2),pch=20)
+  plot(1:n,vec[1:n])
   plot(vec[-n],vec[-1])
   hist(vec)
   qqnorm(vec)
